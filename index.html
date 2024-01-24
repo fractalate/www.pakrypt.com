@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pakrypt</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+
+      background-color: #FFE;
+      color: #333;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #323;
+      color: #FFF;
+
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .full-height-hack {
+      flex: 1;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 250);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .cta-area {
+      display: flex;
+      justify-content: center;
+      gap: 1ch;
+    }
+
+    .cta-button-primary {
+      padding: 10px 20px;
+      background-color: rgb(160, 11, 160);
+      color: #FFF;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .cta-button {
+      padding: 10px 20px;
+      background-color: rgb(222, 207, 222);
+      color: #323;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      position: relative;
+      bottom: 0;
+      color: #BBB;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Pakrypt</h1>
+    <h4>Encrypt and Store Sensitive Data on the Device You Trust</h4>
+  </header>
+  
+  <div class="full-height-hack">
+    <section>
+      <h2>Encrypt and Store</h2>
+      <p>
+        Securely encrypt your sensitive data into a "pak" right in the browser.
+        Your encrypted data is stored on your device in the browser's local storage and is secured with a passphrase.
+        Keep track of passwords, notes, and other small files.
+      </p>
+
+      <h2>Export and Import</h2>
+      <p>
+        Easily export and import "paks", which can be shared via email or as plain text in a pinch.
+      </p>
+    
+      <div class="cta-area">
+        <a href="https://app.pakrypt.com/" class="cta-button-primary">Try it now!</a>
+        <a href="https://github.com/fractalate/pakrypt" class="cta-button">Check it out on GitHub!</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Copyright (c) 2023-2024 Kate Novak</p>
+  </footer>
+</body>
+
+</html>
