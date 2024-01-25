@@ -53,6 +53,7 @@
 
     .cta-area {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 1ch;
     }
@@ -63,14 +64,25 @@
       color: #FFF;
       text-decoration: none;
       border-radius: 5px;
+      flex: 1;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 650px) {
+      .cta-button-primary {
+        flex: inherit;
+        width: 100%;
+      }
     }
 
     .cta-button {
+      flex: 1;
       padding: 10px 20px;
       background-color: rgb(222, 207, 222);
       color: #323;
       text-decoration: none;
       border-radius: 5px;
+      text-align: center;
     }
 
     footer {
