@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pakrypt</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+
+      background-color: #FFE;
+      color: #333;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #323;
+      color: #FFF;
+
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .full-height-hack {
+      flex: 1;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 250);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .cta-area {
+      display: flex;
+      justify-content: center;
+      gap: 1ch;
+    }
+
+    .cta-button-primary {
+      padding: 10px 20px;
+      background-color: rgb(160, 11, 160);
+      color: #FFF;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .cta-button {
+      padding: 10px 20px;
+      background-color: rgb(222, 207, 222);
+      color: #323;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      position: relative;
+      bottom: 0;
+      color: #BBB;
+      text-align: center;
+    }
+
+    code {
+      background: rgba(0, 0, 0, .1);
+      padding-left: 0.5ch;
+      padding-right: 0.5ch;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Pakrypt</h1>
+    <h4>Encrypt and Store Sensitive Data on the Device You Trust</h4>
+  </header>
+
+  <div class="full-height-hack">
+    <section>
+      <h2>User Guide</h2>
+      <p>
+        The main interface of the application is a text box where you type some information about the things you want to do or to find. When you load the application you'll notice two things in the text box. First, "No pak." (assuming this is your first time here), which is indicating that you have no data yet. This can change as you create and work with paks. Second, it instructs you to type "help" for help. Doing so will produce a help tile, which gives some more basic usage information and tips about the application.
+      </p>
+
+      <p>
+        Things you can do with paks:
+      </p>
+
+      <ul>
+        <li>Create new ones: <code>new pak</code>.</li>
+        <li>Import one from a file: <code>import pak</code>.</li>
+        <li>Open one previously created: <code>open pak</code>.</li>
+        <li>Export one as a file: <code>export pak</code>.</li>
+        <li>Close the one you have open: <code>close pak</code>.</li>
+        <li>Delete one: <code>delete pak</code>.</li>
+      </ul>
+
+      <p>
+        When you have a pak open it will either be locked or unlocked. When the pak is locked, you can:
+      </p>
+
+      <ul>
+        <li>Unlock it: <code>unlock pak</code>.</li>
+      </ul>
+
+      <p>
+        When the pak is unlocked, you can:
+      </p>
+
+      <ul>
+        <li>Change its passphrase: <code>change passphrase</code>.</li>
+        <li>Lock it: <code>lock pak</code> (or reload the browser works too).</li>
+        <li>Create a new password: <code>new password</code>.</li>
+        <li>Create a new note: <code>new note</code>.</li>
+        <li>Create a new file: <code>new file</code>.</li>
+      </ul>
+
+      <p>
+        Some additional commands are available:
+      </p>
+
+      <ul>
+        <li>Show everything: <code>*</code> (asterisk) or <code>&nbsp;</code> (space).</li>
+        <li>Change the theme (light/dark): <code>theme</code> or <code>light</code> or <code>dark</code>.</li>
+        <li>Show the help tile: <code>help</code>.</li>
+        <li>Show the version tile: <code>version</code>.</li>
+      </ul>
+
+      <h3>Quick Start</h3>
+
+      <p>
+        Follow these examples to get some quick experience with the application.
+      </p>
+
+      <p>
+        First, let's create a new pak with a secret note:
+      </p>
+
+      <ul>
+        <li>Open up the application at <a href="https://app.pakrypt.com/">app.pakrypt.com</a>.</li>
+        <li>The app is ready for you to create a new pak. Type <code>new pak</code> to show the "New Pak" button. Press it.</li>
+        <li>Enter a name for the pak, e.g. <code>Default</code>.</li>
+        <li>Enter a passphrase in the two passphrase fields, e.g. <code>password</code>.</li>
+        <li>Press the "Create" button.</li>
+        <li>Your pak is created and automatically unlocked and you may begin creating items.</li>
+        <li>Type <code>new note</code> to show the "New Note" button. Press it.</li>
+        <li>Give the note a title, subtitle, and note contents, e.g. My <code>Note</code>, <code>Subtitle</code>, and <code>Here is the secret.</code>.</li>
+        <li>Press the "Create" button.</li>
+        <li>Notice the listing shows the new note. Press its "Edit" button.</li>
+        <li>You may view or edit the note in this screen. Press the "Cancel" button.</li>
+        <li>Type <code>lock pak</code> to show the "Lock" button. Press it.</li>
+        <li>Your note has been saved and it's protected by the passphrase you gave before.</li>
+      </ul>
+
+      <p>
+        Next, let's explore how to return to the pak you created before:
+      </p>
+      
+      <ul>
+        <li>Open up the application at <a href="https://app.pakrypt.com/">app.pakrypt.com</a>.</li>
+        <li>The app is ready for you to unlock your pak. Type <code>unlock pak</code> to show the unlock tile. Enter your passphrase and press the "Unlock" button.</li>
+        <li>Enter the search term <code>My Note</code> and notice the listing shows the note. Press its "Edit" button.</li>
+        <li>You may view or edit the note in this screen. Press the "Cancel" button.</li>
+        <li>Type <code>lock pak</code> to show the "Lock" button. Press it.</li>
+      </ul>
+      
+      <p>
+        Finally, a challenjge exercise for you!
+      </p>
+      <ul>
+        <li>Create a new pak.</li>
+        <li>Add a small file to it instead of a note (something smaller than 100 KB, see <code>new file</code>).</li>
+        <li>Export the pak (see <code>export pak</code>, you could send this via email).</li>
+        <li>Import the file you exported (see <code>import pak</code>).</li>
+        <li>Unlock it.</li>
+        <li>Find the file.</li>
+        <li>Download the file.</li>
+      </ul>
+
+      <div class="cta-area">
+        <a href="https://app.pakrypt.com/" class="cta-button-primary">Try it now!</a>
+        <a href="https://github.com/fractalate/pakrypt" class="cta-button">Check it out on GitHub!</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Copyright (c) 2023-2024 Kate Novak</p>
+  </footer>
+</body>
+
+</html>
