@@ -13,7 +13,7 @@
     }
 
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Monaco', monospace;
 
       box-sizing: border-box;
       margin: 0;
@@ -63,14 +63,24 @@
       gap: 1ch;
     }
 
-    .cta-button-primary {
+    .cta-button {
+      flex: 1;
       padding: 10px 20px;
-      background-color: rgb(160, 11, 160);
-      color: #FFF;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: rgb(222, 207, 222);
+      color: #323;
       text-decoration: none;
       border-radius: 5px;
-      flex: 1;
       text-align: center;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cta-button-primary {
+      background-color: rgb(160, 11, 160);
+      color: #FFF;
     }
 
     @media only screen and (max-width: 650px) {
@@ -78,16 +88,6 @@
         flex: inherit;
         width: 100%;
       }
-    }
-
-    .cta-button {
-      flex: 1;
-      padding: 10px 20px;
-      background-color: rgb(222, 207, 222);
-      color: #323;
-      text-decoration: none;
-      border-radius: 5px;
-      text-align: center;
     }
 
     footer {
@@ -225,9 +225,15 @@
       </ul>
 
       <div class="cta-area">
-        <a href="https://app.pakrypt.com/" class="cta-button-primary">Try it now!</a>
-        <a href="/" class="cta-button">Go to www.pakrypt.com!</a>
-        <a href="https://github.com/fractalate/pakrypt" class="cta-button">Check it out on GitHub!</a>
+        <a href="https://app.pakrypt.com/" class="cta-button cta-button-primary">
+          <span>Try it now!</span>
+        </a>
+        <a href="/" class="cta-button">
+          <span>Go to www.pakrypt.com!</span>
+        </a>
+        <a href="https://github.com/fractalate/pakrypt" class="cta-button">
+          <span>Check it out on GitHub!</span>
+        </a>
       </div>
     </section>
   </div>
